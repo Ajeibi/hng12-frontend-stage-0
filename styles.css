@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.profile-card {
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-card h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.profile-card h3 {
+  font-size: 16px;
+  color: #363f49;
+  font-family: "Great Vibes", cursive;
+  font-weight: normal;
+}
+
+.bio {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bio p {
+  margin-bottom: 8px;
+}
+
+.bio p[data-testid="shortBio"] {
+  font-size: 12px;
+  color: black;
+  display: block;
+  line-height: 20px;
+}
+
+.bio p[data-testid="currentLocation"] {
+  font-size: 12px;
+  color: #393a3c;
+}
+
+.bio p[data-testid="emailAddress"] {
+  font-size: 12px;
+  color: #393a3c;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: rgb(50, 47, 47);
+  font-weight: bold;
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+#utc-time,
+#utc-date {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: "Great Vibes", cursive;
+  display: inline;
+}
